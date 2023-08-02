@@ -1,0 +1,842 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* -------------------------------------Header----------------------------------- */
+
+.navsup{
+    background-color: violet;
+    border: 0.5px solid black;
+    box-shadow:  inset 0px 0px 20px 10px rgb(187, 0, 255);
+}
+
+.logosderedes{
+    display: flex;
+    justify-content: end;
+}
+
+.logosderedes img{
+    width: 30px;
+}
+
+.logoheader img{
+    width: 100px;
+}
+
+.header{
+    font-family: 'Victor Mono', monospace;
+    font-style: italic;
+    font-size: 1.15rem;
+    background-color: rgba(255, 255, 255, 0.827);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0.25rem 1rem;
+    border: 0.5px solid black;
+    box-shadow:  inset 0px 0px 20px 5px rgb(187, 0, 255);
+}
+
+.navitems a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.navitems ul{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.navitems li{
+    margin-right: 1.25rem;
+    margin-top: 4rem;
+    
+}
+
+.navitems a:hover{
+    color: rgb(255, 76, 246);
+}
+.navitems li:last-child{
+    background-color: rgb(255, 76, 246);
+    border: 3px solid rgb(255, 76, 246);
+    padding: 0.10rem .25rem;
+    border-radius: 10px;
+}
+
+.navitems li:last-child:hover{
+    background-color: rgb(136, 0, 255);
+    border: 3px solid blueviolet;
+}
+
+.iconmenu img{
+    width: 40px;
+    background-color: blueviolet;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.iconmenu, #botonverify{
+    display: none;
+    z-index: 1;
+}
+
+@media (max-width:768px){
+    .verify{
+        display: block;
+    }
+    .iconmenu{
+        display: block;
+        position: fixed;
+        top:90px ;
+        right: 10px;
+        cursor: pointer;
+    }
+    .navitems ul{
+        display: block;
+        position: fixed;
+        top: 155px;
+        left: -100%;
+        background-color: rgb(199, 55, 252);
+        width: 100%;
+        height: 350px;
+        right: 0;
+        transition:  0.5s;
+        
+    }
+    .navitems ul li{
+        padding: 1.50rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .navitems ul li:last-child{
+        background: none;
+        padding: .37rem;
+        background-color: violet;
+       
+    }
+    #botonverify:checked ~ ul{
+        left: 0;
+    }
+
+} 
+/* ---------------------------------main en general------------------------------------- */
+.main{
+    background-image: url("/PreEntrega2Laurito/assets/img/Fotos\ Arcoiris/fondoo.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat-x round;
+}
+.maincontacto{
+    background-image:none
+}
+
+.main{
+    font-family: 'Victor Mono', monospace;
+    margin: 0px;
+} 
+
+.main h1{
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    font-style: italic;
+    color: blueviolet;
+    /* border: 10px dashed red; */
+    padding: 5px 10px;
+    margin-left: 20px !important
+}
+
+.main h2{
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+/* ----------------------------------main en inicio--------------------------------- */
+
+.imgcentral{
+    width: 100%;
+    height: 520px;
+}
+
+.imgcentral img{
+    width: 100%;
+    height: 520px;
+   
+}
+
+@media (max-width: 768px){
+    
+    .imgcentral{
+        width: 100%;
+        height: 220px;
+    }
+
+    .imgcentral img{
+        width: 100%;
+        height: 220px;
+    }
+    
+    
+}
+    /* -------------------------------------- */
+
+#animaciones img{
+    width: 100%;
+    height: 300px;
+    border: 15px violet;
+    border-style: dashed;
+    margin-bottom: 40px;
+}
+
+#animaciones .col-lg-3{
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#qnimaciones{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#animaciones a{
+    text-decoration: none;
+    background-color:violet ;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    font-variant-caps: petite-caps ;
+    font-weight: 600;
+    color: black;
+    border: 15px double rgb(255, 50, 50);
+}
+#animaciones h2{
+    color: white;
+    background-color:  red;
+    border-radius: 40px ;
+    margin: 20px;
+}
+#animaciones div{
+    margin: 00px 0px;
+}
+#animaciones .row div {
+    margin: 20px 0px;
+}
+
+#animaciones .row div img:hover{
+    border-color:rgb(255, 50, 50) ;
+}
+#animaciones a:hover{
+    background-color:rgb(255, 50, 50);
+    color: black;
+    border: 15px double violet;
+}
+/* --------------------------------main en animaciones----------------------------- */
+
+.mainanimaciones{
+    margin: 0 20px 0px 20px;
+}
+
+.tiposdeanimaciones img{
+    width: 400px;
+    border: 15px violet;
+    border-style: dashed;
+    margin-bottom: 40px;
+}
+.tiposdeanimaciones img:hover{
+    border-color: red;
+}
+
+.tiposdeanimacion p{
+    font-size: 1.10rem;
+    padding: 20px;
+    border: 15px dashed violet;
+    margin: 0 10px;
+    background-color: aliceblue;
+    opacity: 90%;
+    height: 40%;
+}
+.tiposdeanimaciones h2{
+    text-align: center;
+    margin: 20px;
+}
+
+.tiposdeanimacion{
+    display: flex;
+}
+.tiposdeanimaciones{
+    margin: 5px 20px 40px 20px;
+}
+
+@media (max-width:1400px){
+    .tiposdeanimaciones{
+        margin: 5px 20px 40px 20px;
+    }
+    .tiposdeanimaciones img{
+        width: 300px;
+    }
+    
+    .tiposdeanimacion p{
+        font-size: 1.10rem
+    }
+    .tiposdeanimaciones h2{
+        align-items: center;
+        margin: 20px;
+    }
+    
+    
+    .tiposdeanimacion{
+        display: flex;
+    }
+}
+
+@media (max-width:960px){
+    .tiposdeanimaciones{
+        margin: 5px 10px 40px 10px;
+    }
+    .tiposdeanimaciones img{
+        width: 300px;
+    }
+
+    .tiposdeanimacion p{
+        font-size: 1.10rem;
+    }
+    .tiposdeanimaciones h2{
+        align-items: center;
+        margin: 20px;
+    }
+    
+    
+    .tiposdeanimacion{
+        display: flex;
+    }
+}
+
+@media (max-width:768px){
+    .tiposdeanimaciones{
+        margin: 5px 10px 40px 10px;
+    }
+    .tiposdeanimaciones img{
+        width: 200px;
+    }
+    
+    .tiposdeanimacion p{
+        font-size: 1rem;
+    }
+    .tiposdeanimaciones h2{
+        align-items: center;
+        margin: 20px;
+    }
+    
+    
+    .tiposdeanimacion{
+        display: flex;
+    }
+}
+
+
+/* --------------------------------main de galeria--------------------------------- */
+#galeria img{
+    width: 100%;
+    height: 300px;
+    /* padding: 15px; */
+    border: 8px solid turquoise;
+}
+
+#galeria .col-lg-3{
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#galeria img:hover{
+    border: 8px solid red;
+}
+.main h1{
+    margin: 0.67em 0;
+}
+/* --------------------------------main de nosotros-------------------------------- */
+
+.quienessomos h2{
+    display: inline-block;
+    margin: 30px;
+}
+
+.endondeestamos h2{
+    display: inline-block;
+    margin: 30px;
+}
+
+.porqueelegirnos h2{
+    display: inline-block;
+    margin: 30px;
+}
+.contratarevento h2{
+    display: inline-block;
+    margin: 30px;
+}
+
+.localidadesdetrabajo h2{
+    display: inline-block;
+    margin: 30px;
+}
+
+.divdemain p{
+    margin:  10px 50px 20px;
+}
+
+
+.localidadesdetrabajo h3{
+    margin: 30px 0px 0px 50px;
+    display: flex;
+}
+
+.localidadesdetrabajo a{
+    text-decoration: none;
+    color: rgb(255, 76, 246) ;
+}
+
+.localidadesdetrabajo img{
+    width: 80px;
+    position: relative;
+    top: -23px;
+}
+
+.localidadesdetrabajo span{
+    display: flex;
+}
+
+.localidadesdetrabajo a:hover{
+    color: rgb(187, 0, 255) ;
+}
+/* ---------------------------------- */
+
+
+.contratarevento a{
+    text-decoration: none;
+    color: rgb(255, 76, 246);
+    font-weight: bold;
+    text-decoration: underline 3px rgb(136, 0, 255);
+}
+
+
+/* -------------------------------------- */
+@media (max-width:950px){
+    .localidadesdetrabajo h3{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    .localidadesdetrabajo img{
+        display: flex;
+        flex-direction: column;
+        position: inherit;
+        
+    }
+    .localidadesdetrabajo a{
+        margin-top: 20px;  
+        margin-bottom: 40px;
+    }
+}
+
+/* ------------------------------Logo de Whatsapp---------------------------------- */
+
+.logowpp a img{
+    width: 50px;
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+}
+
+/* --------------------------------Formulario-------------------------------------- */
+
+.paraform{
+    width: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.779);
+    padding: 0 50px 50px 50px;
+}
+
+
+.divdeform{
+    background-color: rgb(48, 48, 48);
+    font-family: 'Roboto Mono', monospace;
+    color: aliceblue;
+    
+}
+
+.pararegistrate{
+    width: 100%;
+}
+
+.pararegistrate h1{
+    font-style: normal;
+    font-size: 3rem;
+    font-weight: 700; 
+    border: none;
+    margin-left: 0 !important; 
+}
+
+.registrate{
+    color: rgb(255, 76, 246);
+    font-size: 60px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 10px 10px 20px 10px;
+    display: inline-block;
+    font-style: normal;
+}
+
+.registrate span{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.form .sector{
+    margin-top: 60px;
+}
+
+.divdeform div label{
+    padding: 10px;
+    margin-left:10%;
+    margin-right: 10%;
+    width: 80%;
+    background: none;
+    color:rgb(255, 76, 246);
+
+}
+
+.divdeform div input{
+    padding: 10px;
+    margin-left:10%;
+    margin-right: 10%;
+    width: 80%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(255, 76, 246);
+    outline: 0;
+    color: rgb(255, 255, 255);
+}
+
+.divdeform div select{
+    padding: 10px;
+    margin-left:10%;
+    margin-right: 10%;
+    width: 80%;
+    background: rgb(48, 48, 48);
+    border: none;
+    border-bottom: 1px solid rgb(255, 76, 246);
+    outline: 0;
+    color: rgb(255, 255, 255);
+}
+
+.divdeform div select option{
+    padding: 10px;
+    margin-left:10%;
+    margin-right: 10%;
+    width: 80%;
+    background: rgb(48, 48, 48);
+    border: none;
+    border-bottom: 1px solid rgb(255, 76, 246);
+    outline: 0;
+    color: rgb(255, 255, 255);
+}
+
+
+.divdeform div .finalizar{
+    margin: 30px;
+    padding: 20px 10px;
+    background-color: rgb(255, 76, 246);
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 55%;
+    color:rgb(0, 0, 0);
+    
+}
+
+.paraboton{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    width: 92%;
+}
+
+.parte3{
+    display: block;
+}
+
+.parte5{
+    width: 92.5%;
+    display: flex;
+    justify-content: end;
+    padding:  0 0 30px 0;
+}
+
+.enparte5{
+    display: inline-block;
+}
+
+.parte5 img{
+    width: 30px;
+}
+
+.numero{
+    color: rgb(255, 76, 246);
+    text-shadow: 0px 0px 10px  rgb(136, 0, 255);
+}
+
+.divdeform div .reset{
+    margin: 20px;
+    background-color: rgba(162, 162, 162, 0.453);
+    font-size: 1rem;
+    margin-left:0%;
+    margin-right: 0%;
+    width: 125px;
+    border: 2px solid rgb(255, 76, 246);
+    border-radius: 5px;
+    text-shadow: 3px 1px 1px rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+
+.divdeform div textarea{
+    resize: vertical;
+    padding: 10px;
+    margin-left:10%;
+    margin-right: 0%;
+    width: 80%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(255, 76, 246);
+    outline: 0;
+    color: rgb(255, 255, 255);
+}
+
+.sectorboton{
+    margin: 0;
+}
+
+
+.form{
+    height: 90%;
+    box-shadow: 0 0 25px violet;
+}
+
+
+.divenform{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.divdeform div .finalizar:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 76, 246);
+    border-radius: 8px;
+    transition: 300ms;
+}
+
+.divdeform div .reset:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 76, 246);
+    border-radius: 12px;
+    transition: 100ms;
+}
+
+
+.parte3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+@media (max-width:768px){
+    .divenform{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .parte5{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding:  0 0 30px 0;
+        margin: 20px 0 20px 0;
+    }
+}
+
+/* --------------------------------Footer-------------------------------- */
+
+.footer{
+    background-color: rgba(234, 0, 255, 0.322);
+    width: 100%;
+    padding: 10px 20px 30px 20px;
+    border: 0.5px solid black;
+    box-shadow:  inset 0px 0px 20px 10px rgb(187, 0, 255);
+    
+}
+
+.img1{
+    width: 100px;
+    display: block;
+    margin:10px auto 20px auto ;
+}
+
+.iconoigfooter,
+.iconofbfooter{
+    width: 70px;
+}
+
+.cajas{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 1rem, ;
+    margin: 1rem 20px 1rem 20px;
+}
+
+.divprefrecuentes, .divcontactos{
+    margin: 10px 50px;
+    padding: 20px;
+}
+
+.divgaleria{
+    margin: 10px 50px;
+    padding: 20px;
+}
+
+.divderedes{
+    margin: 10px 50px;
+    padding: 20px;
+}
+
+.prefrecuentes, .lagaleria, .contactos, .redes{
+    margin-top: 20px;
+}
+
+.cajas a, .cajas h3{
+    text-decoration: underline solid 3px;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.cajas a:hover{
+    color: rgb(187, 0, 255);
+}
+
+
+.cajacr{
+    display: flex;
+    justify-content: center;
+}
+
+.divdecopyright{
+    margin: 20px 0px -2px 0px;
+}
+
+.numero1{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.numero1 img{
+    width: 40px;
+}
+
+.tocaaqui{
+    width: 90px;
+    height: 70px;
+}
+
+a .h3deprefrecuentes{
+    margin-left: 100px;
+}
+
+
+.divprefrecuentes a{
+    margin: 0;
+    text-align: start;
+}
+.prefrecuentes a{
+    text-decoration: none;
+    font-size: 1rem ;
+    font-weight: 500;
+    display: block;
+}
+
+.divcontactos a{
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width:1108px){
+    .footer{
+        background-color: rgba(234, 0, 255, 0.322);
+        width: 100%;
+        padding: 10px 20px 30px 20px;
+        border: 0.5px solid black;
+        box-shadow:  inset 0px 0px 20px 10px rgb(187, 0, 255);
+        
+    }
+
+    .divprefrecuentes a{
+        margin: 0;
+        text-align: center;
+    }
+    .cajas{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .divgaleria, .divprefrecuentes, .divcontactos{
+        text-align: center;
+    }
+
+    .divderedes{
+        margin: 10px 50px;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px){
+    .footer{
+        background-color: rgba(234, 0, 255, 0.322);
+        width: 100%;
+        padding: 10px 20px 30px 20px;
+        border: 0.5px solid black;
+        box-shadow:  inset 0px 0px 20px 10px rgb(187, 0, 255); 
+    }
+
+    .divprefrecuentes a{
+        margin: 0;
+        text-align: center;
+    }
+    .cajas{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    .divgaleria, .divprefrecuentes, .divcontactos{
+        text-align: center;
+    }
+
+    .divderedes{
+        margin: 10px 50px;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* ´---------------------------con bootstrap------------------------------- */
+
