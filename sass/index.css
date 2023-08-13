@@ -656,4 +656,14 @@
 .anclaerror {
   color: rgb(255, 76, 246);
   text-decoration: underline;
+}
+
+.deerror :hover {
+  color: rgb(136, 0, 255);
+}
+
+@media (max-width: 768px) {
+  .deerror {
+    font-size: 1.1rem;
+  }
 }/*# sourceMappingURL=index.css.map */

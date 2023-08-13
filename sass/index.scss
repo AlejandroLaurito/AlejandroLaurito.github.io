@@ -391,3 +391,11 @@ $colorbordeimagenes: rgb(64, 224, 208);
     color:$rosamodificado ;
     text-decoration: underline;
 }
+.deerror :hover{
+    color: $violetamodificado;
+}
+@media (max-width:768px){
+    .deerror{
+        font-size: 1.1rem;
+    }
+}
