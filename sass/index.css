@@ -91,7 +91,18 @@
   color: white;
   background-color: rgb(255, 76, 246);
   border-radius: 40px;
-  margin: 20px;
+  display: block;
+  padding: 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  width: 80%;
+  margin: 20px 0;
+  display: block;
+  padding: 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
 }
 #animaciones h2:hover {
   background-color: red;
@@ -139,6 +150,34 @@
   border-radius: 60px;
 }
 
+@media (max-width: 1200px) {
+  #animaciones a {
+    font-size: 1.3rem;
+  }
+  #animaciones h2 {
+    width: 100%;
+    margin: 20px 0;
+    display: block;
+    padding: 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  #animaciones a {
+    font-size: 1.6rem;
+  }
+  #animaciones h2 {
+    width: 80%;
+    margin: 20px 0;
+    display: block;
+    padding: 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+  }
+}
 @media (max-width: 768px) {
   .imgcentral {
     width: 100%;
@@ -147,6 +186,56 @@
   .imgcentral img {
     width: 100%;
     height: 220px;
+  }
+  #animaciones a {
+    font-size: 2.2rem;
+  }
+  #animaciones h2 {
+    width: 60%;
+    margin: 20px 0;
+    display: block;
+    padding: 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  #animaciones a {
+    font-size: 2rem;
+  }
+  #animaciones h2 {
+    width: 60%;
+    margin: 20px 0;
+    display: block;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+  }
+  #animaciones {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 400px) {
+  #animaciones a {
+    font-size: 1.9rem;
+  }
+  #animaciones h2 {
+    width: 60%;
+    margin: 20px 0;
+    display: block;
+    padding: 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+  }
+  #animaciones {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .tiposdeanimaciones h2:hover {
@@ -515,6 +604,16 @@
   .divderedes {
     margin: 10px 50px;
     padding: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 481px) {
+  .divprefrecuentes, .divderedes, .divgaleria, .divcontactos {
+    margin: 10px 0;
+    padding: 20px 0;
+  }
+  .divprefrecuentes a {
+    margin: 0;
     text-align: center;
   }
 }
