@@ -1,0 +1,64 @@
+.localidadesdetrabajo{
+    h3{
+        margin: 30px 0px 0px 50px;
+        display: flex;
+    }
+    
+    h2{
+        display: inline-block;
+        margin: 30px;
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(255, 76, 246) ;
+    }
+
+    img{
+        width: 80px;
+        position: relative;
+        top: -23px;
+    }
+
+    span{
+        display: flex;
+    }
+
+    a:hover{
+        color: rgb(187, 0, 255) ;
+    }
+}
+
+@media (max-width:950px){
+    .localidadesdetrabajo h3{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    .localidadesdetrabajo img{
+        display: flex;
+        flex-direction: column;
+        position: inherit;
+        
+    }
+    .localidadesdetrabajo a{
+        margin-top: 20px;  
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:768px){
+    .quienessomos h2{
+        font-size: 1.89rem;
+    }
+    
+    .endondeestamos h2{
+        font-size: 1.89rem;
+    }
+    
+    .porqueelegirnos h2{
+        font-size: 1.89rem;
+    }
+    .contratarevento h2{
+        font-size: 1.89rem;
+    }
+}

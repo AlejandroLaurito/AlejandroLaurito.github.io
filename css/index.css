@@ -47,7 +47,12 @@ body{
 }
 
 /* ---------------------------------main en general------------------------------------- */
-
+.main{
+    background-image: url("/assets/img/Fotos\ Arcoiris/fondoo.jpg");
+    background-size: auto;
+    background-position: center; 
+    background-repeat: repeat-x round;
+}
 .maincontacto{
     background-image:none
 }
@@ -84,16 +89,6 @@ body{
 
 .mainanimaciones{
     margin: 0 20px 0px 20px;
-}
-
-.tiposdeanimacion p{
-    font-size: 1.10rem;
-    padding: 20px;
-    border: 15px dashed violet;
-    margin: 0 10px;
-    background-color: aliceblue;
-    opacity: 90%;
-    height: 40%;
 }
 
 

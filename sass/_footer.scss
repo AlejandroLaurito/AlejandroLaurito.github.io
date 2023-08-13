@@ -1,0 +1,57 @@
+@mixin prop_footer_media_query{
+    background-color: rgba(234, 0, 255, 0.322);
+    width: 100%;
+    padding: 10px 20px 30px 20px;
+    border: 0.5px solid black;
+    box-shadow:  inset 0px 0px 20px 10px rgb(187, 0, 255);
+}
+
+
+@media (max-width:1108px){
+    .footer{
+        @include prop_footer_media_query();
+        
+    }
+
+    .divprefrecuentes a{
+        margin: 0;
+        text-align: center;
+    }
+    .cajas{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .divgaleria, .divprefrecuentes, .divcontactos{
+        text-align: center;
+    }
+
+    .divderedes{
+        margin: 10px 50px;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px){
+    .footer{
+        @include prop_footer_media_query(); 
+    }
+
+    .divprefrecuentes a{
+        margin: 0;
+        text-align: center;
+    }
+    .cajas{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    .divgaleria, .divprefrecuentes, .divcontactos{
+        text-align: center;
+    }
+
+    .divderedes{
+        margin: 10px 50px;
+        padding: 20px;
+        text-align: center;
+    }
+}

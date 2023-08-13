@@ -28,7 +28,7 @@
         <div class="header">
 
             <div class="logoheader">
-                <img class="logo1" src="../assets/img/favicon/logo1.png" alt="Arcoiris logo">
+                <a href="../index.html"><img class="logo1" src="../assets/img/favicon/logo1.png" alt="Arcoiris logo"></a>
             </div>
 
             
@@ -68,36 +68,37 @@
            
             <div class="divdeform">
 
-                <form class="form" role="form" action="#">
+                <form class="form" role="form" action="../404/404.html" method="get" >
                     <div class="divenform">
                         <div class="sector nombre">
                             <label for="labelnombre">Nombre:</label>
-                            <input type="text" name="elnombre" id="labelnombre" placeholder="Introduce tu Nombre" aria-required="true">
+                            <input type="text" name="elnombre" id="labelnombre" placeholder="Introduce tu Nombre" required>
                         </div> 
                         
                         <div class="sector apellido">
                             <label for="labelapellido">Apellido:</label>
-                            <input type="text" name="elapellido" id="labelapellido" placeholder="Introduce tu Apellido" aria-required="true">
+                            <input type="text" name="elapellido" id="labelapellido" placeholder="Introduce tu Apellido" required>
                         </div>
 
                         <div class="sector contraseña">
                             <label for="labelcontraseña">Contraseña:</label>
-                            <input type="password" name="lacontraseña" id="labelcontraseña" placeholder="Introduce una Contraseña" aria-required="true"aria-required="true">
+                            <input type="password" name="lacontraseña" id="labelcontraseña" placeholder="Introduce una Contraseña" required>
                         </div>
                         
                         <div class="sector email">
                             <label for="labelemail">Correo Electronico:</label>
-                            <input type="email" name="elemail" id="labelemail" placeholder="Introduce tu Email" aria-required="true">
+                            <input type="email" name="elemail" id="labelemail" placeholder="Introduce tu Email" required>
                         </div>
                         
                         <div class="sector fecha">
                             <label for="labelanacieminto">Fecha de Nacimiento:</label>
-                            <input type="date" name="lafechadenacimiento" id="labelanacieminto" value="2022-12-18" aria-required="true">
+                            <input type="date" name="lafechadenacimiento" id="labelanacieminto" value="2022-12-18" required>
                         </div>
 
                         <div class="sector localidad">
                             <label for="labellocalidad">Localidad:</label>
-                            <select name="localidad" id="labellocalidad">
+                            <select name="localidad" id="labellocalidad" required>
+                                <option value="">Seleciona una localidad</option>
                                 <option value="">lomas del Mirador</option>
                                 <option value="">Ramos Mejia</option>
                                 <option value="">San Justo</option>
@@ -113,20 +114,20 @@
 
                         <div class="sector telefono">
                             <label for="labeltelefono">Numero de Telefono:</label>
-                            <input type="tel" name="eltelefono" id="labeltelefono" placeholder="Introduce tu Numero" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" aria-required="true">
+                            <input type="tel" name="eltelefono" id="labeltelefono" placeholder="Introduce tu Numero" pattern="[0-9]{2}[0-9]{4}[0-9]{4}" required>
                         </div>
                         
                         <div class="sector telefono2">
                             <label for="labeltelefono2">Numero de Telefono:</label>
-                            <input type="tel" name="eltelefono2" id="labeltelefono2" placeholder="Introduce otro Numero"
-                            pattern="[0-9]{4}-[0-9]{4}" aria-required="false">
+                            <input type="tel" name="eltelefono2" id="labeltelefono2" placeholder="Introduce otro Numero(opcional)"
+                            pattern="[0-9]{4}[0-9]{4}">
                         </div>
                     </div>
 
                     <div class="parte2">
                         <div class="sector mensaje">
                             <label for="labelmensaje">Mensaje:</label>
-                            <textarea name="elmensaje" id="labelmensaje" cols="_blank" rows="" placeholder="Escribe tu Consulta"></textarea>
+                            <textarea name="elmensaje" id="labelmensaje" cols="_blank" rows="" placeholder="Escribe tu Consulta" required></textarea>
                         </div>
                     </div>
                     
@@ -139,14 +140,14 @@
                     <div class="parte4">
                         <div class="sectorboton">
                             <label for="labelfinalizar"></label>
-                            <button class="finalizar" type="button" value="FINALIZAR" name="Finalizacion" id="labelfinalizar">FINALIZAR</button>
+                            <button class="finalizar" type="submit" value="FINALIZAR" name="Finalizacion" id="labelfinalizar">FINALIZAR</button>
                         </div> 
                     </div>
 
                     <div class="parte5">
                         <div class="enparte5">
                             <p class="numero">
-                                <img src="../assets/img/mas img-icons/icono llamada fuxia.png" alt="Telefono">1122334455
+                                <img src="../assets/img/mas img-icons/icono llamada fuxia.png" alt="Telefono">11-5499-6133
                             </p>
                         </div>
                     </div>
@@ -201,7 +202,7 @@
                         <a href="https://www.instagram.com/arcoirismr_animaciones/"><img class="iconoigfooter" src="../assets/img/mas img-icons/instagram icono footer.png" alt="Icono instagram"></a>
                         <a href="https://www.facebook.com/ArcoirisMR"><img class="iconofbfooter" src="../assets/img/mas img-icons/facebook icono footer.png" alt="Icono facebook"></a>
                         <p class="numero1">
-                            <img src="../assets/img/mas img-icons/icono llamada negro.png" alt="Icono llamar">1122334455
+                            <img src="../assets/img/mas img-icons/icono llamada negro.png" alt="Icono llamar">11-5499-6133
                         </p>
                     </div>
                 </div>

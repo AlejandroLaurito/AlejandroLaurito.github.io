@@ -5,89 +5,7 @@ $colorbordeimagenes: rgb(64, 224, 208);
 // -------------------------------------------------------------------------
 
 // -------------------------------------Header----------------------------------- 
-.navitems{
-    a{
-        font-weight: bold;
-        color: black;
-        text-decoration: none;
-    }
-    ul{
-        display: flex;
-        align-items: center;
-        z-index: 1;
-        padding-left: 0rem;
-    }
-    li{
-        margin-right: 1.25rem;
-        margin-top: 4rem;
-        
-    }
-    a:hover{
-        color: rgb(255, 76, 246);
-    }
-    li:last-child{
-        background-color: rgb(255, 76, 246);
-        border: 3px solid rgb(255, 76, 246);
-        padding: 0.10rem .25rem;
-        border-radius: 10px;
-    }
-    li:last-child:hover{
-        background-color: rgb(136, 0, 255);
-        border: 3px solid blueviolet;
-    }
-}
-.iconmenu img{
-    width: 40px;
-    background-color: blueviolet;
-    padding: 5px;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.iconmenu, #botonverify{
-    display: none;
-    z-index: 1;
-}
-@media (max-width:768px){
-    .verify{
-        display: block;
-    }
-    .iconmenu{
-        display: block;
-        position: fixed;
-        top:90px ;
-        right: 10px;
-        cursor: pointer;
-    }
-    .navitems ul{
-        display: block;
-        position: fixed;
-        top: 155px;
-        left: -100%;
-        background-color: rgb(199, 55, 252);
-        width: 100%;
-        height: 350px;
-        right: 0;
-        transition:  0.5s;
-        
-    }
-    .navitems ul li{
-        padding: 1.50rem;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-    .navitems ul li:last-child{
-        background: none;
-        padding: .37rem;
-        background-color: violet;
-       
-    }
-    #botonverify:checked ~ ul{
-        left: 0;
-    }
-
-} 
+@import 'header';
 
 // ---------------------------------main en general-------------------------------------
 .main{
@@ -149,6 +67,10 @@ $colorbordeimagenes: rgb(64, 224, 208);
         border-color:rgb(255, 50, 50) ;
     }
 }
+#animaciones{
+    background-color: aqua;
+    border-radius: 60px;
+}
 
 @media (max-width: 768px){
     
@@ -166,20 +88,49 @@ $colorbordeimagenes: rgb(64, 224, 208);
 }
 
 // --------------------------------main en animaciones-----------------------------
+@mixin parah2{
+    text-align: center;
+    margin: 20px;
+    color: $violetamodificado;
+    border: 5px solid $violetamodificado;
+    border-radius: 40px;
+    padding: 10px 20px;
+    background-image: url(/assets/img/Fotos\ Arcoiris/fondoo.jpg) ;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.tiposdeanimaciones h2:hover{
+    color: $rosamodificado;
+    border-color: $rosamodificado;
+}
+
+.tiposdeanimacion img{
+    margin: 10px;
+    border-radius: 350px;
+    border: 15px solid $violetamodificado;
+}
+
+.tiposdeanimacion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .tiposdeanimaciones{
     margin: 5px 20px 40px 20px;
     img{
         width: 400px;
-        border: 15px violet;
-        border-style: dashed;
+        height: 400px;
         margin-bottom: 40px;
     }
     img:hover{
-        border-color: red;
+        border-color: $rosamodificado;
     }
     h2{
-        text-align: center;
-        margin: 20px;
+       @include parah2()    
     }
 }
 @media (max-width:1400px){
@@ -187,20 +138,16 @@ $colorbordeimagenes: rgb(64, 224, 208);
         margin: 5px 20px 40px 20px;
     }
     .tiposdeanimaciones img{
-        width: 300px;
+        width: 350px;
+        height: 350px;
+        border: 12px solid $violetamodificado;
     }
     
     .tiposdeanimacion p{
         font-size: 1.10rem
     }
     .tiposdeanimaciones h2{
-        align-items: center;
-        margin: 20px;
-    }
-    
-    
-    .tiposdeanimacion{
-        display: flex;
+        @include parah2()
     }
 }
 
@@ -210,19 +157,15 @@ $colorbordeimagenes: rgb(64, 224, 208);
     }
     .tiposdeanimaciones img{
         width: 300px;
+        height: 300px;
+        border: 12px solid $violetamodificado;
     }
 
     .tiposdeanimacion p{
         font-size: 1.10rem;
     }
     .tiposdeanimaciones h2{
-        align-items: center;
-        margin: 20px;
-    }
-    
-    
-    .tiposdeanimacion{
-        display: flex;
+        @include parah2()
     }
 }
 
@@ -231,31 +174,24 @@ $colorbordeimagenes: rgb(64, 224, 208);
         margin: 5px 10px 40px 10px;
     }
     .tiposdeanimaciones img{
-        width: 200px;
-        height: 200px;
+        width: 280px;
+        height: 280px;
+        border: 12px solid $violetamodificado;
     }
     
     .tiposdeanimacion p{
         font-size: 1rem;
     }
     .tiposdeanimaciones h2{
-        align-items: center;
-        margin: 20px;
-    }
-    
-    
-    .tiposdeanimacion{
-        display: flex;
+        @include parah2()
     }
 }
-
 
 // --------------------------------main de galeria---------------------------------
 #galeria{
     img{
         width: 100%;
         height: 300px;
-        // padding: 15px;
         border: 8px solid $colorbordeimagenes;
     }
     .col-lg-3{
@@ -266,223 +202,97 @@ $colorbordeimagenes: rgb(64, 224, 208);
 
     img:hover{
         border: 8px solid red;
-}
-
-}
-// -----------------------------------------------------------------------------------
-
-.localidadesdetrabajo{
-    h3{
-        margin: 30px 0px 0px 50px;
-        display: flex;
+        transform: scale(1.4);
     }
-    
     h2{
-        display: inline-block;
-        margin: 30px;
-    }
+        text-align: center;
+        margin: 20px;
+        color: $violetamodificado;
+        border: 5px solid $violetamodificado;
+        border-radius: 40px;
+        padding: 10px 20px;
+        background-image: url(/assets/img/Fotos\ Arcoiris/fondoo.jpg) ;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;  
+    }      
+    h2:hover{
+        color: $rosamodificado;
+        border-color: $rosamodificado;
+    } 
+    
+}
 
-    a{
-        text-decoration: none;
-        color: rgb(255, 76, 246) ;
-    }
-
-    img{
-        width: 80px;
-        position: relative;
-        top: -23px;
-    }
-
-    span{
-        display: flex;
-    }
-
-    a:hover{
-        color: rgb(187, 0, 255) ;
+@media (max-width:1460px){
+    #galeria img:hover{
+        border: 8px solid red;
+        transform: scale(1.2);
     }
 }
 
-@media (max-width:950px){
-    .localidadesdetrabajo h3{
-        display: grid;
-        grid-template-columns: auto ;
-    }
-    .localidadesdetrabajo img{
-        display: flex;
-        flex-direction: column;
-        position: inherit;
-        
-    }
-    .localidadesdetrabajo a{
-        margin-top: 20px;  
-        margin-bottom: 40px;
+@media (max-width:800px){
+    #galeria{
+        h2{
+            width: 250px;
+        }
+        img{
+            margin-top: 20px;
+        }
+        img:hover{
+            border: 8px solid red;
+            transform: scale(1.0);
+        }
     }
 }
+// -----------------------------------Nosotros------------------------------------
 
+@import 'nosotros';
 
 // --------------------------------Formulario--------------------------------------
 
-@mixin _prop-select_y_option{
-    padding: 10px;
-    margin-left:10%;
-    margin-right: 10%;
-    width: 80%;
-    background: rgb(48, 48, 48);
-    border: none;
-    border-bottom: 1px solid rgb(255, 76, 246);
-    outline: 0;
-    color: rgb(255, 255, 255);
-} 
-
-.divdeform div{
-    label{
-        padding: 10px;
-        margin-left:10%;
-        margin-right: 10%;
-        width: 80%;
-        background: none;
-        color:rgb(255, 76, 246);
-    
-    }
-    input{
-        padding: 10px;
-        margin-left:10%;
-        margin-right: 10%;
-        width: 80%;
-        background: none;
-        border: none;
-        border-bottom: 1px solid rgb(255, 76, 246);
-        outline: 0;
-        color: rgb(255, 255, 255);
-    }
-    select{
-        @include _prop-select_y_option()
-    }
-    select option{
-        @include _prop-select_y_option()
-    }
-    .finalizar{
-        margin: 30px;
-        padding: 20px 10px;
-        background-color: rgb(255, 76, 246);
-        font-size: 1.5rem;
-        margin: 0;
-        margin-bottom: 10px;
-        width: 55%;
-        color:rgb(0, 0, 0);
-        
-    }
-    .reset{
-        margin: 20px;
-        background-color: rgba(162, 162, 162, 0.453);
-        font-size: 1rem;
-        margin-left:0%;
-        margin-right: 0%;
-        width: 125px;
-        border: 2px solid rgb(255, 76, 246);
-        border-radius: 5px;
-        text-shadow: 3px 1px 1px rgb(0, 0, 0);
-        color:rgb(255, 255, 255);
-    }
-    textarea{
-        resize: vertical;
-        padding: 10px;
-        margin-left:10%;
-        margin-right: 0%;
-        width: 80%;
-        background: none;
-        border: none;
-        border-bottom: 1px solid rgb(255, 76, 246);
-        outline: 0;
-        color: rgb(255, 255, 255);
-    }
-
-    .finalizar:hover{
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 76, 246);
-        border-radius: 8px;
-        transition: 300ms;
-    }
-    .reset:hover{
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 76, 246);
-        border-radius: 12px;
-        transition: 100ms;
-    }
-
-
-
-}
-@media (max-width:768px){
-    .divenform{
-        display: grid;
-        grid-template-columns: 100%;
-    }
-
-    .parte5{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding:  0 0 30px 0;
-        margin: 20px 0 20px 0;
-    }
-}
-
+@import 'formulario';
 // --------------------------------Footer--------------------------------
-@mixin prop_footer_media_query{
-    background-color: rgba(234, 0, 255, 0.322);
-    width: 100%;
-    padding: 10px 20px 30px 20px;
-    border: 0.5px solid black;
-    box-shadow:  inset 0px 0px 20px 10px rgb(187, 0, 255);
+
+@import 'footer';
+// -----------------------------transitions-------------------------------
+.img1:hover{
+    width: 105px;
+    transition: 150ms;
 }
 
-
-@media (max-width:1108px){
-    .footer{
-        @include prop_footer_media_query();
-        
+// .logowpp img:hover{
+//     width:60px
+// }
+.logowpp img{
+    animation-duration: 1.1s;
+    animation-name: movimientowpp;
+    animation-iteration-count: infinite;
+}
+@keyframes movimientowpp {
+    0%{
+        transform: scale(1)
     }
-
-    .divprefrecuentes a{
-        margin: 0;
-        text-align: center;
+    50%{
+        transform: scale(1.5)
     }
-    .cajas{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    .divgaleria, .divprefrecuentes, .divcontactos{
-        text-align: center;
-    }
-
-    .divderedes{
-        margin: 10px 50px;
-        padding: 20px;
-        text-align: center;
+    100%{
+        transform: scale(1)
     }
 }
+    // ----------------------------------Error 404-------------------------------------- 
 
-@media (max-width:768px){
-    .footer{
-        @include prop_footer_media_query(); 
-    }
+.error{
+    object-fit: scale-down;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .divprefrecuentes a{
-        margin: 0;
-        text-align: center;
-    }
-    .cajas{
-        display: grid;
-        grid-template-columns: auto ;
-    }
-    .divgaleria, .divprefrecuentes, .divcontactos{
-        text-align: center;
-    }
-
-    .divderedes{
-        margin: 10px 50px;
-        padding: 20px;
-        text-align: center;
-    }
+.deerror{
+    text-align: center;
+}
+.anclaerror{
+    color:$rosamodificado ;
+    text-decoration: underline;
 }
